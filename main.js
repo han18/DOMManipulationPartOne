@@ -26,8 +26,11 @@ topMenuEl.classList.add("flex-around");
 // iterating through
 for (let i = 0; i < menuLinks.length; i++) {
   const aMenu = document.createElement("a");
-  aMenu.setAttribute("herf", menuLinks[i].href);
+  aMenu.setAttribute("href", menuLinks[i].href);
   aMenu.innerHTML = menuLinks[i].text;
   topMenuEl.appendChild(aMenu);
+  
 }
 console.log(menuLinks);
+
+
